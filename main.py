@@ -5,7 +5,7 @@ This module starts the calculator application by invoking the
 calculator runner. It contains no business logic.
 """
 
-from app.calculator import start_calculator
+from app.runner import start_calculator
 
 if __name__ == "__main__":
 
