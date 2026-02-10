@@ -18,7 +18,7 @@ from abc import ABC, abstractmethod
 
 
 class Operation(ABC):
-     """
+    """
     Abstract base class for all calculator operations.
 
     Every concrete operation must:
@@ -36,6 +36,8 @@ class Operation(ABC):
 
 
 class Add(Operation):
+    """Concrete addition operation."""
+
     symbol = "+"
     name = "add"
 
@@ -44,6 +46,8 @@ class Add(Operation):
 
 
 class Sub(Operation):
+    """Concrete subtraction operation."""
+
     symbol = "-"
     name = "subtract"
 
@@ -52,6 +56,8 @@ class Sub(Operation):
 
 
 class Mul(Operation):
+    """Concrete multiplication operation."""
+
     symbol = "*"
     name = "multiply"
 
@@ -60,11 +66,12 @@ class Mul(Operation):
 
 
 class Div(Operation):
+    """Concrete division operation."""
+
     symbol = "/"
     name = "divide"
 
     def execute(self, a: float, b: float) -> float:
-        # Graceful error for division by zero
         if b == 0:
             raise ZeroDivisionError("Cannot divide by zero.")
         return a / b
