@@ -139,6 +139,96 @@ This project uses pytest for unit testing.
 
     pytest --cov=app --cov-report=term-missing --cov-fail-under=100
 
+
+## Git and GitHub Workflow (Beginner Guide)
+
+This section explains how to push this project to GitHub step by step.
+
+### Initialize a Git Repository
+
+From the project root directory:
+
+    git init
+
+This creates a local Git repository.
+
+------------------------------------------------------------------------
+
+### Create a .gitignore File
+
+Create a file named `.gitignore` and add:
+
+    __pycache__/
+    .pytest_cache/
+    .coverage
+    .env
+
+This prevents unnecessary files from being committed.
+
+------------------------------------------------------------------------
+
+### Check Repository Status
+
+    git status
+
+You should see all project files listed as untracked.
+
+------------------------------------------------------------------------
+
+### Add Files to Git
+
+    git add .
+
+This stages all files for commit.
+
+------------------------------------------------------------------------
+
+### Commit Changes
+
+    git commit -m "Initial commit: OOP calculator with tests"
+
+------------------------------------------------------------------------
+
+### Create a GitHub Repository
+
+1.  Go to https://github.com
+2.  Click **New Repository**
+3.  Give it a name (for example: `oop-calculator`)
+4.  Do NOT initialize with README (you already have one)
+5.  Click **Create Repository**
+
+------------------------------------------------------------------------
+
+### Connect Local Project to GitHub
+
+Copy the repository URL from GitHub, then run:
+
+    git remote add origin git@github.com:USERNAME/REPOSITORYNAME.git
+
+Replace `USERNAME` with your GitHub username.
+Replace `REPOSITORYNAME` with your GitHub Repository name.
+------------------------------------------------------------------------
+
+### Push Code to GitHub
+
+    git branch -M main
+    git push -u origin main
+
+Your project is now available on GitHub.
+
+------------------------------------------------------------------------
+
+### Making Future Changes
+
+Typical workflow for updates:
+
+    git status
+    git add .
+    git commit -m "Describe your change here"
+    git push
+
+------------------------------------------------------------------------
+
 ## Adding a New Operation
 
 To add a new operation (for example, modulo):
