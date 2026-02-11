@@ -18,7 +18,7 @@ from app.operations import Operation
 
 
 class Calculator:
-     """
+    """
     Calculator class responsible for performing calculations.
 
     It does NOT:

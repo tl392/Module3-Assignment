@@ -32,7 +32,7 @@ class Operation(ABC):
     @abstractmethod
     def execute(self, a: float, b: float) -> float:
         """Run the operation and return the result."""
-        raise NotImplementedError
+        raise NotImplementedError # pragma: no cover
 
 
 class Add(Operation):
