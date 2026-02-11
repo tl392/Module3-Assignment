@@ -30,12 +30,11 @@ and test interactive programs
     │
     ├── app/
     │   ├── __init__.py
-    │   ├── calculator.py
-    │   ├── parser.py
-    │   ├── repl.py
-    │   ├── runner.py
-    │   └── operations/
-    │       └── __init__.py
+    │   ├── calculator/__init__.py
+    │   ├── parser/__init__.py
+    │   ├── repl/__init__.py
+    │   ├── runner/__init__.py
+    │   └── operations/__init__.py
     │
     ├── tests/
     │   ├── __init__.py
